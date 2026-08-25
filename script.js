@@ -1,7 +1,6 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// TODO: replace with a real form endpoint (e.g. a Formspree form ID) before going live.
-const FORM_ENDPOINT = "";
+const FORM_ENDPOINT = "https://formspree.io/f/xyegqdow";
 
 const form = document.getElementById("contact-form");
 const status = document.getElementById("form-status");
