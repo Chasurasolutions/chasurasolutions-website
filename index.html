@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chasura Solutions</title>
+<meta name="description" content="Chasura Solutions — Expert IT Consulting &amp; Digital Solutions. Transforming businesses with innovative IT strategies.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="brand">
+      <span class="brand-mark">C</span>
+      <span class="brand-text">Chasura Solutions</span>
+    </a>
+    <a href="#contact" class="btn-cta">Get Your Free Consultation</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <svg class="hero-decor" viewBox="0 0 1200 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <circle cx="90" cy="90" r="34" fill="none" stroke="#1f87c9" stroke-width="2" opacity="0.35"/>
+      <circle cx="90" cy="90" r="10" fill="none" stroke="#1f87c9" stroke-width="2" opacity="0.35"/>
+      <g stroke="#1f87c9" stroke-width="1" opacity="0.25">
+        <line x1="120" y1="120" x2="330" y2="70"/>
+        <line x1="330" y1="70" x2="560" y2="160"/>
+        <line x1="560" y1="160" x2="820" y2="90"/>
+        <line x1="820" y1="90" x2="1040" y2="180"/>
+        <line x1="330" y1="70" x2="420" y2="220"/>
+        <line x1="560" y1="160" x2="640" y2="300"/>
+        <line x1="820" y1="90" x2="900" y2="260"/>
+      </g>
+      <g fill="#1f87c9" opacity="0.4">
+        <circle cx="330" cy="70" r="4"/>
+        <circle cx="560" cy="160" r="4"/>
+        <circle cx="820" cy="90" r="4"/>
+        <circle cx="1040" cy="180" r="4"/>
+        <circle cx="420" cy="220" r="4"/>
+        <circle cx="640" cy="300" r="4"/>
+        <circle cx="900" cy="260" r="4"/>
+      </g>
+      <g transform="translate(660,420)" opacity="0.35">
+        <rect x="0" y="30" width="14" height="40" fill="#5c665f"/>
+        <rect x="22" y="10" width="14" height="60" fill="#5c665f"/>
+        <rect x="44" y="45" width="14" height="25" fill="#5c665f"/>
+        <rect x="66" y="0" width="14" height="70" fill="#1f87c9"/>
+      </g>
+    </svg>
+    <div class="hero-inner">
+      <h1>Expert IT Consulting &amp; Digital Solutions</h1>
+      <p class="hero-sub">Transforming businesses with innovative IT strategies.</p>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="services-inner">
+      <div class="services-text">
+        <h2>Expert IT Consulting Services</h2>
+        <p>Delivering customised IT strategies to optimise business operations and enhance digital transformation.</p>
+        <p>Experienced professionals dedicated to your success.</p>
+        <p>Proven results that speak for themselves.</p>
+      </div>
+      <div class="services-illustration">
+        <svg viewBox="0 0 420 380" role="img" aria-label="Consultants reviewing results on screen">
+          <rect x="70" y="30" width="270" height="270" rx="6" fill="#e1f0fa"/>
+          <rect x="30" y="300" width="360" height="26" fill="#1f87c9"/>
+          <rect x="150" y="90" width="180" height="120" rx="4" fill="#1e2321"/>
+          <rect x="168" y="108" width="90" height="8" rx="2" fill="#1f87c9"/>
+          <rect x="168" y="126" width="130" height="6" rx="2" fill="#5c665f"/>
+          <rect x="168" y="140" width="110" height="6" rx="2" fill="#5c665f"/>
+          <polyline points="168,190 195,165 220,180 250,150 300,160" fill="none" stroke="#1f87c9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <g transform="translate(96,190)">
+            <circle cx="20" cy="18" r="16" fill="#f3eee0"/>
+            <rect x="2" y="34" width="36" height="70" rx="10" fill="#1e2321"/>
+            <rect x="-6" y="96" width="52" height="14" rx="6" fill="#145e92"/>
+          </g>
+          <g transform="translate(150,205)">
+            <circle cx="20" cy="18" r="16" fill="#f3eee0"/>
+            <rect x="2" y="34" width="36" height="70" rx="10" fill="#1f87c9"/>
+            <rect x="-6" y="96" width="52" height="14" rx="6" fill="#145e92"/>
+            <rect x="30" y="50" width="26" height="34" rx="3" fill="#1e2321"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="contact-inner">
+      <h2>Contact Us</h2>
+      <p class="contact-sub">Drop us a line!</p>
+      <form id="contact-form" class="contact-form">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="email">Email*</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+        </div>
+        <label class="checkbox-row">
+          <input type="checkbox" name="subscribe">
+          <span>Sign up for our email list for updates, promotions, and more.</span>
+        </label>
+        <button type="submit">Send</button>
+        <p class="form-status" id="form-status" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>Copyright &copy; <span id="year"></span> Chasura Solutions - All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
