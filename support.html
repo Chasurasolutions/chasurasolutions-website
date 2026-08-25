@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — Chasura Solutions</title>
+<meta name="description" content="Get support from Chasura Solutions Ltd for Trace My Build, Clanfolio, or our HRIS implementation services.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="brand">
+      <span class="brand-mark">C</span>
+      <span class="brand-text">Chasura Solutions</span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="header-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="header-nav" id="header-nav">
+      <a href="/#about">About Us</a>
+      <a href="/#services">Our Services</a>
+      <a href="/#solutions">Digital Solutions</a>
+      <a href="/support.html">Support</a>
+      <a href="/#contact" class="btn-cta">Get Your Free Consultation</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="about" style="padding-bottom: 0;">
+    <div class="about-inner">
+      <h2>Support</h2>
+      <p>Need help with Trace My Build, Clanfolio, or our HRIS implementation work? Send us a message below and a member of the Chasura Solutions team will get back to you.</p>
+    </div>
+  </section>
+
+  <section class="solutions" style="padding-top: 56px;">
+    <div class="solutions-inner">
+      <div class="solutions-grid">
+        <a class="solution-card" href="https://www.tracemybuild.com" target="_blank" rel="noopener">
+          <span class="solution-mark">T</span>
+          <h3>Trace My Build</h3>
+          <p>Questions about tracking your build spend or your account? Reach out using the form below.</p>
+          <span class="solution-link">Visit tracemybuild.com &rarr;</span>
+        </a>
+        <a class="solution-card" href="https://www.clanfolio.com" target="_blank" rel="noopener">
+          <span class="solution-mark">C</span>
+          <h3>Clanfolio</h3>
+          <p>Questions about household accounts, invites, or your net worth data? Reach out using the form below.</p>
+          <span class="solution-link">Visit clanfolio.com &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="contact-inner">
+      <h2>Contact Us</h2>
+      <p class="contact-sub">Drop us a line!</p>
+      <form id="contact-form" class="contact-form">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="email">Email*</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Which product is this about, and what's going on?"></textarea>
+        </div>
+        <label class="checkbox-row">
+          <input type="checkbox" name="subscribe">
+          <span>Sign up for our email list for updates, promotions, and more.</span>
+        </label>
+        <button type="submit">Send</button>
+        <p class="form-status" id="form-status" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <nav class="footer-nav">
+    <a href="/#about">About Us</a>
+    <a href="/#services">Our Services</a>
+    <a href="/#solutions">Digital Solutions</a>
+    <a href="/support.html">Support</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <p class="footer-legal">CHASURA SOLUTIONS LTD &middot; Registered in England &amp; Wales &middot; Company No. 16137387</p>
+  <p>Copyright &copy; <span id="year"></span> Chasura Solutions - All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
