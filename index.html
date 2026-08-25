@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chasura Solutions</title>
-<meta name="description" content="Chasura Solutions — Expert IT Consulting &amp; Digital Solutions. Transforming businesses with innovative IT strategies.">
+<meta name="description" content="Chasura Solutions — HRIS Implementation and digital solutions. Expert IT consulting, including Dayforce implementation, and the products we build: Trace My Build and Clanfolio.">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,15 @@
       <span class="brand-mark">C</span>
       <span class="brand-text">Chasura Solutions</span>
     </a>
-    <a href="#contact" class="btn-cta">Get Your Free Consultation</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="header-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="header-nav" id="header-nav">
+      <a href="#about">About Us</a>
+      <a href="#services">Our Services</a>
+      <a href="#solutions">Digital Solutions</a>
+      <a href="#contact" class="btn-cta">Get Your Free Consultation</a>
+    </nav>
   </div>
 </header>
 
@@ -58,13 +66,19 @@
     </div>
   </section>
 
-  <section class="services">
+  <section id="about" class="about">
+    <div class="about-inner">
+      <h2>About Us</h2>
+      <p>Chasura Solutions helps organisations implement and get the most value from their HR technology, and builds practical digital products that solve everyday problems for real people. We bring deep HRIS and Dayforce expertise together with hands-on software development, so the technology we deliver actually works for the people using it.</p>
+    </div>
+  </section>
+
+  <section id="services" class="services">
     <div class="services-inner">
       <div class="services-text">
-        <h2>Expert IT Consulting Services</h2>
-        <p>Delivering customised IT strategies to optimise business operations and enhance digital transformation.</p>
-        <p>Experienced professionals dedicated to your success.</p>
-        <p>Proven results that speak for themselves.</p>
+        <h2>Our Services</h2>
+        <p class="service-highlight">HRIS Implementation</p>
+        <p>End-to-end implementation and configuration of HR information systems — including Dayforce — so your organisation gets full value from day one.</p>
       </div>
       <div class="services-illustration">
         <svg viewBox="0 0 420 380" role="img" aria-label="Consultants reviewing results on screen">
@@ -87,6 +101,27 @@
             <rect x="30" y="50" width="26" height="34" rx="3" fill="#1e2321"/>
           </g>
         </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="solutions" class="solutions">
+    <div class="solutions-inner">
+      <h2>Digital Solutions</h2>
+      <p class="solutions-sub">Software we've built and shipped, powering real households and real builds.</p>
+      <div class="solutions-grid">
+        <a class="solution-card" href="https://www.tracemybuild.com" target="_blank" rel="noopener">
+          <span class="solution-mark">T</span>
+          <h3>Trace My Build</h3>
+          <p>See exactly where your money goes when you're funding a home build from abroad — every transfer, tracked and accounted for.</p>
+          <span class="solution-link">Visit tracemybuild.com &rarr;</span>
+        </a>
+        <a class="solution-card" href="https://www.clanfolio.com" target="_blank" rel="noopener">
+          <span class="solution-mark">C</span>
+          <h3>Clanfolio</h3>
+          <p>Your family's complete financial picture — every account, pension, property and mortgage brought together into one household net worth.</p>
+          <span class="solution-link">Visit clanfolio.com &rarr;</span>
+        </a>
       </div>
     </div>
   </section>
@@ -120,6 +155,12 @@
 </main>
 
 <footer class="site-footer">
+  <nav class="footer-nav">
+    <a href="#about">About Us</a>
+    <a href="#services">Our Services</a>
+    <a href="#solutions">Digital Solutions</a>
+    <a href="#contact">Contact</a>
+  </nav>
   <p>Copyright &copy; <span id="year"></span> Chasura Solutions - All Rights Reserved.</p>
 </footer>
 

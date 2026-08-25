@@ -1,5 +1,20 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
+const navToggle = document.getElementById("nav-toggle");
+const headerNav = document.getElementById("header-nav");
+
+navToggle.addEventListener("click", () => {
+  const isOpen = headerNav.classList.toggle("open");
+  navToggle.setAttribute("aria-expanded", String(isOpen));
+});
+
+headerNav.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    headerNav.classList.remove("open");
+    navToggle.setAttribute("aria-expanded", "false");
+  });
+});
+
 const FORM_ENDPOINT = "https://formspree.io/f/xyegqdow";
 
 const form = document.getElementById("contact-form");
