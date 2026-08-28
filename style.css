@@ -243,6 +243,22 @@ a { color: inherit; }
   text-align: center;
 }
 
+.about-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--accent-soft);
+  margin-bottom: 20px;
+}
+
+.about-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
 .about-inner h2 {
   font-family: var(--sans);
   font-weight: 800;
