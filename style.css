@@ -9,6 +9,7 @@
   --accent: #1f87c9;
   --accent-hover: #145e92;
   --accent-soft: #e1f0fa;
+  --accent-deep: #0d3b63;
   --sans: "Plus Jakarta Sans", Arial, sans-serif;
 }
 
@@ -74,14 +75,43 @@ a { color: inherit; }
   font-weight: 700;
   font-size: 14.5px;
   padding: 14px 24px;
-  border-radius: 999px;
+  border-radius: 12px;
   border: none;
   cursor: pointer;
-  transition: background 0.15s ease;
+  transition: background 0.15s ease, transform 0.15s ease;
 }
 
 .btn-cta:hover {
   background: var(--accent-hover);
+}
+
+.btn-hero {
+  display: inline-block;
+  margin-top: 36px;
+  background: #fff;
+  color: var(--accent-hover);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 16px 30px;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(13, 59, 99, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-hero:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(13, 59, 99, 0.4);
+}
+
+.eyebrow {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 12.5px;
+  font-weight: 800;
+  color: var(--accent);
+  margin: 0 0 14px;
 }
 
 .header-nav {
@@ -125,38 +155,49 @@ a { color: inherit; }
 
 .hero {
   position: relative;
-  background: var(--card-alt);
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-deep) 100%);
   overflow: hidden;
 }
 
-.hero-decor {
+.hero-dots {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
 }
 
+.hero-wave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 70px;
+  display: block;
+}
+
 .hero-inner {
   position: relative;
   max-width: 780px;
   margin: 0 auto;
-  padding: 110px 24px;
+  padding: 120px 24px 150px;
   text-align: center;
 }
 
 .hero h1 {
   font-family: var(--sans);
   font-weight: 800;
-  font-size: 44px;
-  line-height: 1.2;
+  font-size: 52px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
   margin: 0;
-  color: var(--ink);
+  color: #fff;
 }
 
 .hero-sub {
   font-weight: 600;
   font-size: 18px;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.85);
   margin: 18px 0 0;
 }
 
@@ -174,7 +215,8 @@ a { color: inherit; }
 .about-inner h2 {
   font-family: var(--sans);
   font-weight: 800;
-  font-size: 32px;
+  font-size: 34px;
+  letter-spacing: -0.01em;
   margin: 0 0 20px;
   color: var(--ink);
 }
@@ -204,7 +246,8 @@ a { color: inherit; }
 .services-text h2 {
   font-family: var(--sans);
   font-weight: 800;
-  font-size: 32px;
+  font-size: 34px;
+  letter-spacing: -0.01em;
   margin: 0 0 22px;
   color: var(--ink);
 }
@@ -242,7 +285,8 @@ a { color: inherit; }
 .solutions-inner h2 {
   font-family: var(--sans);
   font-weight: 800;
-  font-size: 32px;
+  font-size: 34px;
+  letter-spacing: -0.01em;
   margin: 0 0 14px;
   color: var(--ink);
 }
@@ -264,16 +308,17 @@ a { color: inherit; }
   display: block;
   background: var(--card-bg);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: 20px;
   padding: 32px;
   text-decoration: none;
   color: inherit;
-  transition: border-color 0.15s ease, transform 0.15s ease;
+  box-shadow: 0 4px 16px rgba(30, 35, 33, 0.05);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .solution-card:hover {
-  border-color: var(--accent);
-  transform: translateY(-2px);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(30, 35, 33, 0.12);
 }
 
 .solution-mark {
@@ -325,7 +370,8 @@ a { color: inherit; }
 .contact h2 {
   font-family: var(--sans);
   font-weight: 800;
-  font-size: 30px;
+  font-size: 32px;
+  letter-spacing: -0.01em;
   margin: 0 0 6px;
   text-align: center;
   color: var(--ink);
@@ -390,7 +436,7 @@ button[type="submit"] {
   background: var(--accent);
   color: #fff;
   border: none;
-  border-radius: 999px;
+  border-radius: 12px;
   font-family: var(--sans);
   font-weight: 700;
   font-size: 14.5px;
@@ -483,8 +529,8 @@ button[type="submit"]:hover {
 }
 
 @media (max-width: 600px) {
-  .hero h1 { font-size: 30px; }
-  .hero-inner { padding: 64px 20px; }
+  .hero h1 { font-size: 32px; }
+  .hero-inner { padding: 64px 20px 100px; }
   .about { padding: 64px 20px 0; }
   .services { padding: 64px 20px; }
   .solutions { padding: 64px 20px; }
