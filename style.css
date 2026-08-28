@@ -241,6 +241,26 @@ a { color: inherit; }
   grid-template-columns: 1fr 1fr;
   gap: 56px;
   align-items: center;
+  background: var(--card-bg);
+  border-radius: 28px;
+  box-shadow: 0 4px 16px rgba(30, 35, 33, 0.05);
+  padding: 56px;
+}
+
+.services-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--accent-soft);
+  margin-bottom: 20px;
+}
+
+.services-icon svg {
+  width: 22px;
+  height: 22px;
 }
 
 .services-text h2 {
@@ -248,7 +268,7 @@ a { color: inherit; }
   font-weight: 800;
   font-size: 34px;
   letter-spacing: -0.01em;
-  margin: 0 0 22px;
+  margin: 0 0 18px;
   color: var(--ink);
 }
 
@@ -260,10 +280,55 @@ a { color: inherit; }
   margin: 0 0 14px;
 }
 
-.service-highlight {
-  font-weight: 800 !important;
-  font-size: 20px !important;
-  color: var(--accent) !important;
+.service-tag {
+  display: inline-block;
+  background: var(--accent-soft);
+  color: var(--accent-hover);
+  font-weight: 800;
+  font-size: 15px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+
+.service-points {
+  list-style: none;
+  margin: 24px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.service-points li {
+  position: relative;
+  padding-left: 28px;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.service-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+}
+
+.service-points li::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 8px;
+  width: 8px;
+  height: 4px;
+  border-left: 2px solid var(--accent-hover);
+  border-bottom: 2px solid var(--accent-hover);
+  transform: rotate(-45deg);
 }
 
 .services-illustration svg {
@@ -491,7 +556,7 @@ button[type="submit"]:hover {
 }
 
 @media (max-width: 800px) {
-  .services-inner { grid-template-columns: 1fr; }
+  .services-inner { grid-template-columns: 1fr; padding: 36px; }
   .services-illustration { order: -1; max-width: 320px; margin: 0 auto; }
   .solutions-grid { grid-template-columns: 1fr; }
 }
