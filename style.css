@@ -402,7 +402,7 @@ a { color: inherit; }
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 20px;
-  padding: 32px;
+  overflow: hidden;
   text-decoration: none;
   color: inherit;
   box-shadow: 0 4px 16px rgba(30, 35, 33, 0.05);
@@ -412,6 +412,79 @@ a { color: inherit; }
 .solution-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 16px 32px rgba(30, 35, 33, 0.12);
+}
+
+.solution-preview {
+  position: relative;
+  height: 150px;
+  padding: 18px 20px;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-deep) 100%);
+  overflow: hidden;
+}
+
+.preview-dots {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.preview-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.preview-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  height: 64px;
+}
+
+.preview-chart span {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 4px 4px 0 0;
+  transform-origin: bottom;
+  animation: previewBar 2.4s ease-in-out infinite;
+}
+
+.preview-chart span:nth-child(1) { height: 45%; animation-delay: 0s; }
+.preview-chart span:nth-child(2) { height: 72%; animation-delay: 0.15s; }
+.preview-chart span:nth-child(3) { height: 55%; animation-delay: 0.3s; }
+.preview-chart span:nth-child(4) { height: 90%; animation-delay: 0.45s; }
+.preview-chart span:nth-child(5) { height: 62%; animation-delay: 0.6s; }
+
+@keyframes previewBar {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(0.55); }
+}
+
+.preview-shine {
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(115deg, transparent, rgba(255, 255, 255, 0.22), transparent);
+  animation: previewShine 3.5s ease-in-out infinite;
+}
+
+@keyframes previewShine {
+  0% { left: -60%; }
+  100% { left: 130%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .preview-chart span,
+  .preview-shine {
+    animation: none;
+  }
+}
+
+.solution-body {
+  padding: 26px 32px 32px;
 }
 
 .solution-mark {
