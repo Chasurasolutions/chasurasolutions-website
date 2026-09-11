@@ -132,9 +132,8 @@ h1, h2, h3, h4, p { margin: 0; }
   text-decoration: none;
   color: #fff;
 }
-.brand-mark { width: 32px; height: 32px; }
-.brand-text { font-weight: 800; font-size: 17px; letter-spacing: -.02em; }
-.brand-text span { font-weight: 500; opacity: .7; }
+.brand-logo { display: block; height: 19px; width: auto; }
+.site-footer .brand-logo { height: 21px; }
 
 .header-nav {
   display: flex;
@@ -1236,6 +1235,7 @@ h1, h2, h3, h4, p { margin: 0; }
 
 @media (max-width: 640px) {
   .container { padding: 0 20px; }
+  .site-header .brand-logo { height: 17px; }
   .section { padding: 84px 0; }
   .cta-band { padding-bottom: 84px; }
   .hero-inner { padding-top: 56px; padding-bottom: 84px; gap: 64px; }
