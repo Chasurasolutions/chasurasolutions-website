@@ -671,17 +671,13 @@ h1, h2, h3, h4, p { margin: 0; }
 
 .product-brand { display: flex; align-items: center; gap: 14px; }
 .product-logo {
-  display: grid;
-  place-items: center;
+  display: block;
   width: 48px;
   height: 48px;
+  flex: none;
   border-radius: 14px;
-  color: #fff;
-  font-weight: 800;
-  font-size: 21px;
+  object-fit: cover;
 }
-.logo-tmb { background: linear-gradient(135deg, #38a3e0, #145e92); }
-.logo-clan { background: linear-gradient(135deg, #3aa88c, #0e2a24); }
 .product-brand h3 { font-size: 26px; font-weight: 800; letter-spacing: -.025em; line-height: 1.1; }
 .product-brand p { margin-top: 3px; color: var(--slate); font-size: 14.5px; font-weight: 600; }
 
