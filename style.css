@@ -758,7 +758,15 @@ h1, h2, h3, h4, p { margin: 0; }
 .avail span { width: 7px; height: 7px; border-radius: 50%; background: #22c55e; }
 .avail + .product-desc { margin-top: 14px; }
 
-.store-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.store-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+
+/* Official store badges, used unmodified. Google's artwork carries its own clear
+   space, so it renders taller for the two badge bodies to match at 44px. */
+.badge-link { display: inline-flex; transition: opacity .15s var(--ease); }
+.badge-link:hover { opacity: .85; }
+.badge { display: block; width: auto; }
+.badge-apple { height: 44px; }
+.badge-google { height: 65px; }
 .btn-ghost { background: #fff; color: var(--ink); border-color: var(--line); }
 .btn-ghost:hover { border-color: var(--accent); color: var(--accent-hover); }
 
@@ -766,6 +774,8 @@ h1, h2, h3, h4, p { margin: 0; }
   .shots { gap: 12px; padding-bottom: 20px; }
   .shot { border-radius: 16px; }
   .shot-offset { transform: translateY(20px); }
+  .badge-apple { height: 40px; }
+  .badge-google { height: 59px; }
 }
 
 /* ---------- CTA band ---------- */
