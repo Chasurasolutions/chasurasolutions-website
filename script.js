@@ -51,7 +51,8 @@ const FORM_ENDPOINT = "https://formspree.io/f/xyegqdow";
 const form = document.getElementById("contact-form");
 const status = document.getElementById("form-status");
 
-form.addEventListener("submit", async (e) => {
+// Pages without a contact form (the privacy notice) skip this.
+form?.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const data = new FormData(form);
