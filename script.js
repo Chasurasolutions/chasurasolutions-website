@@ -55,6 +55,11 @@ const status = document.getElementById("form-status");
 form?.addEventListener("submit", async (e) => {
   e.preventDefault();
 
+  // Stop a double-click sending the message twice.
+  const button = form.querySelector('button[type="submit"]');
+  if (button.disabled) return;
+  button.disabled = true;
+
   const data = new FormData(form);
   status.textContent = "Sending...";
   status.style.color = "#55657d";
@@ -77,5 +82,7 @@ form?.addEventListener("submit", async (e) => {
   } catch (err) {
     status.textContent = "Something went wrong. Please try again.";
     status.style.color = "#b3261e";
+  } finally {
+    button.disabled = false;
   }
 });
